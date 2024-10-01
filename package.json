@@ -1,29 +1,54 @@
 {
-  "name": "galaxy",
+  "name": "indiro",
+  "homepage": "https://makaanlelo.com/tf_products_007/indiro/react/demo",
+  "version": "0.1.0",
   "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
-  },
   "dependencies": {
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "@emailjs/browser": "^3.6.2",
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
+    "node-sass": "^7.0.1",
+    "react": "^17.0.2",
+    "react-bootstrap": "^2.3.1",
+    "react-chartjs-2": "^4.1.0",
+    "react-countup": "^6.2.0",
+    "react-dom": "^17.0.2",
+    "react-metismenu": "^1.4.0",
+    "react-modal-video": "^1.2.8",
+    "react-responsive-masonry": "^2.1.4",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "5.0.1",
+    "react-scroll-to-top": "^1.0.8",
+    "simple-react-lightbox": "^3.5.1",
+    "sweetalert2": "^11.4.8",
+    "swiper": "^8.1.4",
+    "web-vitals": "^2.1.4",
+    "wowjs": "^1.1.3"
   },
-  "devDependencies": {
-    "@eslint/js": "^9.9.0",
-    "@types/react": "^18.3.3",
-    "@types/react-dom": "^18.3.0",
-    "@vitejs/plugin-react": "^4.3.1",
-    "eslint": "^9.9.0",
-    "eslint-plugin-react-hooks": "^5.1.0-rc.0",
-    "eslint-plugin-react-refresh": "^0.4.9",
-    "globals": "^15.9.0",
-    "typescript": "^5.5.3",
-    "typescript-eslint": "^8.0.1",
-    "vite": "^5.4.1"
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "sass": "node-sass --watch src/assets/scss/main.scss src/assets/css/style.css --source-map src/assets/css/style.css.map"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
