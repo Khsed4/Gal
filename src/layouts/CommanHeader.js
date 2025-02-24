@@ -83,6 +83,9 @@ function CommanHeader(){
                                     <Link to={'#'}><img src={Logo} alt="" /></Link>
                                 </div>
                                 <ul className="nav navbar-nav navbar navbar-left">	
+									 <li>
+                        <Link to="/">Home</Link>
+                    </li>
 									{MenuListArray2.map((data,index) => {	
 										var menuClass = data.classsChange;									
 										return(

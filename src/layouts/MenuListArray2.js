@@ -1,36 +1,6 @@
+import { Link } from "react-router-dom";
 export const MenuListArray2 = [
-    {
-        title: 'Home',	
-        classsChange: 'sub-menu-down',		
-        content: [
-            {
-                title: 'Home-1',
-                to: './',					
-            },
-            {
-                title: 'Home-2',
-                to: './index-2',
-                
-            },
-            {
-                title: 'Home-3',
-                to: './index-3',
-                
-            },
-            {
-                title: 'Home-4',
-                to: './index-4',
-                
 
-            },
-            {
-                title: 'Home-5',
-                to: './index-5',
-                
-            },
-            
-        ],
-    },
     {
         title: 'Page',
         classsChange: 'has-mega-menu',        
