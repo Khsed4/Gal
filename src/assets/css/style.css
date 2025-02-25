@@ -29085,7 +29085,7 @@ footer {
 [data-theme-color="color_1"] {
   --gradient: linear-gradient( to right, rgb(255,64,62) 0%, rgb(255,129,27) 100%);
   --gradient-sec: linear-gradient( to right, rgb(57,26,166) 0%, rgb(6,163,245) 100%);
-  --primary: #fe4c1c;
+  --primary: #488FCC;
   --secondary: #192436;
   --primary-hover: #ec471b;
   --primary-dark: #ea4619;

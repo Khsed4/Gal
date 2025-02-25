@@ -11,9 +11,9 @@ import Slider1 from './../assets/images/main-slider/slider1.jpg';
 import Slider9 from './../assets/images/main-slider/slider9.jpg';
 import Slider10 from './../assets/images/main-slider/slider10.jpg';
 
-import bg1 from './../assets/images/background/bg1.jpg';
-import bg2 from './../assets/images/background/bg2.jpg';
-import bg3 from './../assets/images/background/bg3.jpg';
+import bg1 from './../assets/images/bnr/bnr6.jpg';
+import bg2 from './../assets/images/bnr/bnr3.jpg';
+import bg3 from './../assets/images/bnr/bnr6.jpg';
 
 // import Swiper core and required modules
 //import {Autoplay,  Navigation } from "swiper";
@@ -22,9 +22,11 @@ import SwiperCore, { Autoplay, Parallax,Thumbs, Pagination, Navigation, EffectFa
 SwiperCore.use([Parallax, Autoplay, Pagination , Navigation, EffectFade]);
 
 const bannerBlog = [
-	{bgimage: Slider1, title:'Market-leading Producer of Sheet Metal Alloy' },
-	{bgimage: Slider9, title:'How To Make More Industry By Doing Less' },
-	{bgimage: Slider10, title:'The Industry That Wins Customers' },
+	{bgimage: bg1, title:'Unleash the Power of Your Engine' , decription:"Our premium oils, lubricants, and grease are designed to maximize your engine's performance. Trust the best for smooth operations and long-lasting power."},
+	{bgimage: bg2, title:'Engineered for Excellence' ,decription:"Experience superior lubrication and protection with our top-tier engine oils and greases. Keep your car running like new with products that go the extra mile"},
+	{bgimage: bg3, title:'Maximize Efficiency, Minimize Wear' ,decription:"Our advanced oils and lubricants reduce friction and wear, ensuring your engine stays in peak condition. Drive with confidence, knowing you’ve chosen the best."},
+	{bgimage: bg1, title:'Protect What Powers You' ,decription:"Our oils and greases deliver unmatched protection against the toughest conditions. Keep your engine safe and running smoothly, mile after mile."},
+	{bgimage: bg2, title:'Fuel Your Car’s Performance',decription:"Engineered for ultimate protection and performance, our oils and lubricants are the ideal choice for drivers who demand the best for their car’s engine." }
 ];
 
 const bannerSlider2 = [
@@ -83,7 +85,7 @@ export default function BannerSlider() {
 							<div className="row">
 								<div className="col-lg-8 col-md-10">
 									<h1 className="title" data-swiper-parallax="-500">{item.title}</h1>
-									<p data-swiper-parallax="-1000">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration which don’t look even slightly believable. It Is A Long Established Fact That A Reader Will Be Distracted By The Read Of A Page.</p>
+									<p data-swiper-parallax="-1000">{item.decription}</p>
 									<Link to={"./about-us"} data-swiper-parallax="-1500" className="btn btn-primary btn-icon m-r10 m-b10">READ MORE <i className="fas fa-arrow-right"></i></Link>
 									<Link to={"./contact-us"} data-swiper-parallax="-2000" className="btn btn-dark btn-icon m-r10 m-b10">GET IN TOUCH <i className="fas fa-arrow-right"></i></Link>
 								</div>
@@ -100,7 +102,7 @@ export default function BannerSlider() {
 			<div className="image-slider__pagination" ref={paginationRef}>
 				<div className="image-slider__current">1</div>
 				<div className="swiper-pagination swiper-pagination-slider1"></div>
-				<div className="image-slider__total">3</div>
+				<div className="image-slider__total">{bannerBlog.length}</div>
 			</div>
 			
 			<Swiper className="swiper-container slider-thumbs-wraper main-swiper-thumb1"

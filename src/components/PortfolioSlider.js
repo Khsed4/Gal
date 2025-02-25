@@ -8,9 +8,9 @@ import "swiper/css";
 
 //Images
 
-import work1 from './../assets/images/work/work-1/pic1.jpg';
-import work2 from './../assets/images/work/work-1/pic2.jpg';
-import work3 from './../assets/images/work/work-1/pic3.jpg';
+import work1 from './../assets/images/product/MOTOR-OIL-CNG-1-265x300.png';
+import work2 from './../assets/images/product/MULTI-GRADE-MOTOR-OIL-247x300.png';
+import work3 from './../assets/images/product/5L-GALAXY-PANTHER-DIESEL-ENGINE-OIL-API-CH4-SAE-15W40-copy-243x300.png';
 
 
 
@@ -19,22 +19,41 @@ import { Navigation } from "swiper";
 
 
 const protfolioBlog = [
-	{ image: work1, title:'Mechanical Engineering'},
-	{ image: work2, title:'Flexible Manufacturing'},
-	{ image: work3, title:'Power & Energy'},
+	{ image: work1, title:'Premium Oils & Lubricants for Peak Performance', description:"Our high-quality oils and lubricants are engineered to provide superior protection and performance for your engine. Experience smoother operation, better fuel efficiency, and enhanced longevity with every drive."},
+	{ image: work2, title:'The Ultimate Grease for Unmatched Protection',description:"Our grease is designed for heavy-duty performance, offering the highest level of protection against friction, wear, and extreme temperatures. Keep your machinery and vehicles running smoothly with the best grease on the market."},
+	{ image: work3, title:'Hydraulic Oils for Powerful Performance',description:"Our hydraulic oils are formulated to meet the demands of high-pressure systems, ensuring reliable and efficient operation. Trust our hydraulic oils to keep your equipment running at its best, even in the toughest conditions."},
+	{ image: work3, title:'Sea Oil for Extreme Durability',description:"Designed for maritime environments, our sea oil offers exceptional protection against corrosion and wear, ensuring that your equipment performs flawlessly in harsh sea conditions. Trust our sea oil for long-lasting durability on the water."}
 ]; 
+const titleStyle = {
+    textAlign: 'center',
+    fontSize: '36px',
+    marginBottom: '20px',
+  };
 
+  const descriptionStyle = {
+    textAlign: 'left',
+    fontSize: '18px',
+    lineHeight: '1.6',
+    margin: '0 20px',
+  };
+  const imgStyle = {
+    width: '100%',
+    height: 'auto',
+    objectFit: 'cover',
+    transition: 'transform 0.3s ease',
+  };
 function PortfolioSlider() {
 	const navigationPrevRef = React.useRef(null)
 	const navigationNextRef = React.useRef(null)
+
 	return (
 		<>
 			<div className="row spno">
 				<div className="col-lg-4 align-self-center px-lg-3 px-0 mb-lg-0 mb-4 aos-item" data-aos="fade-right" data-aos-duration="800" data-aos-delay="500">
 					<div className="m-l60 m-r60 m-lg-l20 m-lg-r20 m-md-l0 m-md-r0">
 						<div className="section-head style-1">
-							<h2 className="title m-b20">Industries Provide Best Services</h2>
-							<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration which don’t look even slightly believable. It Is A Long Established Fact That A Reader Will Be Distracted By</p>
+							<h2 className="title m-b20" style={titleStyle}>Galaxy: Powering Performance Across Industries</h2>
+							<p style={descriptionStyle}>Galaxy delivers top-tier oils, lubricants, greases, hydraulic fluids, and sea oils, designed for maximum protection and performance in any environment. Engineered for excellence, our products keep your engines and equipment running smoothly and reliably.</p>
 						</div>
 						<div className="swiper-button">
 							<div className="btn-prev swiper-button-prev-portfolio"  ref={navigationPrevRef}><i className="las la-angle-left"></i></div>
@@ -86,11 +105,11 @@ function PortfolioSlider() {
 							<SwiperSlide key={ind}>
 								<div className="dz-box style-1">
 									<div className="dz-media">
-										<img src={item.image} alt="" />
+										<img src={item.image} alt=""  style={imgStyle}/>
 									</div>
 									<div className="dz-info">
 										<h3 className="title m-b10"><Link to={"#"}>{item.title}</Link></h3>
-										<h6 className="sub-title text-primary">150 projects</h6>
+										
 									</div>
 								</div>
 							</SwiperSlide>

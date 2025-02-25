@@ -22,8 +22,8 @@ import Bg2Png from './../assets/images/background/bg2.png';
 import bg3 from './../assets/images/background/bg3.jpg';
 import bg22 from './../assets/images/background/bg22.jpg';
 
-import about1 from './../assets/images/about/about1.jpg';
-import about2 from './../assets/images/about/about2.jpg';
+import about1 from './../assets/images/product/5L-GALAXY-PANTHER-DIESEL-ENGINE-OIL-API-CH4-SAE-15W40-copy-243x300.png';
+import about2 from './../assets/images/product/MULTI-GRADE-MOTOR-OIL-247x300.png';
 import about6 from './../assets/images/about/about6.jpg';
 import about7 from './../assets/images/about/about7.jpg';
 import about8 from './../assets/images/about/about8.jpg';
@@ -111,10 +111,10 @@ function Index1(){
 											</div>
 											<div className="exp-info">
 												<ul className="list-check primary">
-													<li>Oil & Gas Engineering</li>
-													<li>Chemical Engineering</li>
-													<li>Information architecture</li>
-													<li>Chemical Engineering</li>
+													<li>Premium Oils</li>
+													<li>Ultimate Grease</li>
+													<li>Powerful Hydraulics</li>
+													<li>Durable Sea Oil</li>
 												</ul>
 											</div>
 										</div>
@@ -124,8 +124,8 @@ function Index1(){
 							<div className="col-lg-6 m-b30 " >
 								<div className="about-content">
 									<div className="section-head style-1">
-										<h2 className="title">Industry United In Seeking Rate </h2>
-										<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration which don’t look even slightly believable. It Is A Long Established Fact That A Reader Will Be Distracted</p>
+										<h2 className="title">Powering Performance, Delivering Excellence </h2>
+										<p>At Galaxy, we are dedicated to providing the highest quality oils, lubricants, greases, hydraulic fluids, and sea oils for superior performance. Engineered for excellence, our products ensure peak protection, efficiency, and longevity for your machinery, vehicles, and equipment. With a commitment to innovation and durability, Galaxy delivers the power you need to keep moving forward</p>
 									</div>
 									<Link to={"./about-us"} className="btn btn-primary btn-icon">READ MORE <i className="fas fa-arrow-right"></i></Link>
 								</div>
@@ -154,10 +154,10 @@ function Index1(){
 							<div className="col-lg-6 m-b30">
 								<div className="about-content">
 									<div className="section-head style-1 aos-item"  >
-										<h3 className="title m-b20 text-white">WE ARE ARE LEADER IN INDUSTRIAL MARKET</h3>
-										<p className="text-white">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration which don’t look even slightly believable. It Is A Long Established Fact That A Reader Will Be Distracted By</p>
+										<h3 className="title m-b20 text-white">Leading the Oil & Lubricant Industry</h3>
+										<p className="text-white">As leaders in the industrial market, Galaxy sets the standard for quality and performance. Our premium oils, lubricants, greases, hydraulic fluids, and sea oils deliver unmatched reliability and efficiency. Trusted by industries worldwide, we continue to lead through innovation, ensuring our products exceed expectations and drive success.</p>
 									</div>
-									<ul className="list-number-circle">
+									{/* <ul className="list-number-circle">
 										<li data-text="1" className="aos-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
 											<h3 className="text-white">Oil And Lubricant</h3>
 											<p className="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
@@ -166,7 +166,15 @@ function Index1(){
 											<h3 className="text-white">Meterial Engineering</h3>
 											<p className="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
 										</li>
-									</ul>
+										<li data-text="1" className="aos-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
+											<h3 className="text-white">Oil And Lubricant</h3>
+											<p className="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+										</li>
+										<li data-text="2" className="aos-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
+											<h3 className="text-white">Meterial Engineering</h3>
+											<p className="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+										</li>
+									</ul> */}
 									<Link to={"./about-us"} className="btn btn-primary btn-icon">READ MORE <i className="fas fa-arrow-right"></i></Link>
 								</div>
 							</div>
