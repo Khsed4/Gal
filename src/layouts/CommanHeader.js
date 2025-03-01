@@ -1,8 +1,7 @@
 import React,{useState, useEffect} from 'react';
 import {Link} from 'react-router-dom';
 
-import Collapse from 'react-bootstrap/Collapse';
-import {MenuListArray2} from './MenuListArray2';
+
 
 //Images
 import Logowhite from './../assets/images/Galaxy-Lubricants-Logo.png';

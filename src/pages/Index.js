@@ -1,6 +1,5 @@
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import ScrollToTop2 from "react-scroll-to-top";
-
 import ScrollToTop from './../layouts/ScrollToTop';
 import DarkTheme from './../layouts/DarkTheme';
 import Home from './Home';
