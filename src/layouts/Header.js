@@ -42,8 +42,14 @@ function Header(){
 	
 	
 	
-
-
+	// Menu dropdown list 
+	const [active , setActive] = useState('Home')
+    const handleMenuActive = status => {
+		setActive(status)
+        if(active === status){
+			setActive('');
+		}
+    }
 	// Menu dropdown list End
 		
 	return(
