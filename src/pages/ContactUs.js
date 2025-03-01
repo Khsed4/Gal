@@ -37,7 +37,7 @@ export default function ContactUs(){
                 <PageTitle  title='Contact Us'  parentPage='Home' childPage='Pages' />
                 <section className="content-inner-2 pt-0">
                     <div className="map-iframe">
-                        <iframe title="contact" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d227748.3825624477!2d75.65046970649679!3d26.88544791796718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396c4adf4c57e281%3A0xce1c63a0cf22e09!2sJaipur%2C+Rajasthan!5e0!3m2!1sen!2sin!4v1500819483219" style={{border:'0', width:'100%', minHeight:'100%', marginBottom: '-8px'}} allowFullScreen></iframe>
+                        <iframe title="contact" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d208.753015884799!2d62.19143606175965!3d34.34889991786841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1740830888893!5m2!1sen!2s" style={{border:'0', width:'100%', minHeight:'100%', marginBottom: '-8px'}} allowFullScreen></iframe>
                     </div>
                 </section>
                 <section className="contact-wraper1" style={{backgroundImage: 'url('+ bg18 +')'}}>	

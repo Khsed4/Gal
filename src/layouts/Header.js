@@ -132,20 +132,10 @@ function Header(){
 
 												{MenuListArray.map((data,index) => {										
 													return(
-														<li  key={index} className="sub-menu-down" >
-															<Link to={'#'} className={`${ active === data.title ? '' : 'dz-open'}`}
-																onClick={() => handleMenuActive(data.title)}
-															>
-																<span>{data.title}</span>
-															</Link>	
+														<li  key={index}  >
+														
 															<Collapse in={active === data.title ? true :false}>
-																<ul  className={`${active === data.title ? 'sub-menu-open' : ''} sub-menu`}>
-																	{data.content&&data.content.map((data,index) => {
-																		return(
-																			<li key={index}><Link to={data.to}>{data.title}</Link></li>														
-																		)
-																	})}
-																</ul>
+																<Link key={index}><Link to={data.to}>{data.title}</Link></Link>	
 															</Collapse>
 														</li>
 													)

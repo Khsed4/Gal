@@ -2,16 +2,13 @@ import { Link } from "react-router-dom";
 export const MenuListArray2 = [
 
     {
-        title: 'Page',
+        title: 'Products',
         classsChange: 'has-mega-menu',        
         content: [
             {
                 title: 'Pages',
                 content:[
-                    {
-                        title: 'About Me',
-                        to: './about-me',
-                    },
+                    
                     {
                         title: 'About Us',
                         to: './about-us',
@@ -48,58 +45,25 @@ export const MenuListArray2 = [
                 title: 'Pages',
                 content:[
                
-                    {
-                        title: 'Gallery Grid 4',
-                        to: './gallery-grid-4',
-                    },
+                  
                     {
                         title: 'Gallery Masonry',
                         to: './gallery-masonry',
                     },
-                    {
-                        title: 'Help Desk',
-                        to: './help-desk',
-                    },
+                    
                 ],
             },
             {
                 title: 'Pages',
                 content:[
-                    {
-                        title: 'Pricing Table',
-                        to: './pricing',
-                    },
-                    {
-                        title: 'Privacy Policy',
-                        to: './privacy-policy',
-                    },
-                    {
-                        title: 'Services',
-                        to: './services',
-                    },
+                    
+                    
                 ],
             },    
 
         ],
     },
-    {
-        title: 'Portfolio',	
-        classsChange: 'sub-menu-down',
-        content: [
-            {
-                title: 'Portfolio 1',
-                to: './portfolio',
-            },
-            {
-                title: 'Portfolio Collage',
-                to: './portfolio-collage',
-            },
-            {
-                title: 'Portfolio Details',
-                to: './portfolio-details',
-            },
-        ],
-    },
+  
     {
         title: 'Shop',
         classsChange: 'sub-menu-down',
@@ -131,33 +95,8 @@ export const MenuListArray2 = [
         ],
     },
     {
-        title: 'Blog',
+        title: 'About US',
         classsChange: 'sub-menu-down',
-        content:[
-            {
-                title:'Blog Grid',
-                to:'./blog-grid',
-            },
-            {
-                title:'Blog Right Sidebar',
-                to:'./blog-large-right-sidebar',
-            },
-            {
-                title:'Blog List Sidebar',
-                to:'./blog-list-sidebar',
-            },
-            {
-                title:'Blog List Left Sidebar',
-                to:'./blog-list-left-sidebar',
-            },
-            {
-                title:'Post Wide View',
-                to:'./blog-details-post-wide',
-            },
-            {
-                title:'Blog Details',
-                to:'./blog-details',
-            },
-        ],
+        to: './about-us',
     }
 ]

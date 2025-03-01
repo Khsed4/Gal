@@ -5,7 +5,7 @@ import Collapse from 'react-bootstrap/Collapse';
 import {MenuListArray2} from './MenuListArray2';
 
 //Images
-import Logowhite from './../assets/images/logo-white.png';
+import Logowhite from './../assets/images/Galaxy-Lubricants-Logo.png';
 import Logo from './../assets/images/logo.png';
 
 function CommanHeader(){
@@ -85,42 +85,14 @@ function CommanHeader(){
                                 <ul className="nav navbar-nav navbar navbar-left">	
 									 <li>
                         <Link to="/">Home</Link>
+						<Link to="/shop-grid-3">Products</Link>
+						<Link to="/services">Serivces</Link>			
+						<Link to="/about-us">About Us</Link>
+						<Link to="/team">Our Team</Link>
+						<Link to="/contact-us">Contact Us</Link>
+					
                     </li>
-									{MenuListArray2.map((data,index) => {	
-										var menuClass = data.classsChange;									
-										return(
-											<li key={index}
-												className={`${menuClass} ${ active === data.title ? 'open' : ''}`}
-												onClick={() => handleMenuActive(data.title)}
-											>
-												<Link to={"#"} >
-													<span>{data.title}</span>
-												</Link>	
-												<Collapse in={active === data.title ? true :false}>
-													<ul className={`${menuClass === "sub-menu-down" ? "sub-menu" : menuClass ==="has-mega-menu" ? "mega-menu" :""}`}>
-														{data.content && data.content.map((data,index) => {
-															return(
-																<>
-																	<li key={index}>
-																		<Link to={data.to}>{data.title}</Link>
-																		{menuClass === "has-mega-menu" &&
-																			<ul>
-																				{data.content&&data.content.map((data,index) => {
-																					return(
-																						<li key={index}><Link to={data.to}>{data.title}</Link></li>
-																					)
-																				})}
-																			</ul>
-																		}
-																	</li>
-																</>	
-															)
-														})}														
-													</ul>
-												</Collapse>
-											</li>
-										)
-									})}
+									
 								
                                 </ul>
                                 <div className="dz-social-icon">

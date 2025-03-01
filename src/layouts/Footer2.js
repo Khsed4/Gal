@@ -34,7 +34,6 @@ function Footer2(){
                                     <ul>
                                         <li><Link to={"#"}>Home</Link></li>
                                         <li><Link to={"#"}>About Us</Link></li>
-                                        <li><Link to={"#"}>About Me</Link></li>
                                         <li><Link to={"#"}>Portfolio</Link></li>
                                         <li><Link to={"#"}>Pricing</Link></li>
                                         <li><Link to={"#"}>Contact Us</Link></li>
