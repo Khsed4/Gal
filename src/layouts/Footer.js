@@ -107,7 +107,7 @@ function Footer(){
 					<div className="container">
 						<div className="row align-items-center">
 							<div className="col-lg-12 text-center"> 
-								<span className="copyright-text">Copyright © 2022 <a href="https://dexignzone.com/" target="_blank" className="text-primary" rel="noreferrer">DexignZone</a>. All rights reserved.</span> 
+								<span className="copyright-text">Copyright © 2025 <a href="https://galaxylube.com/" target="_blank" className="text-primary" rel="noreferrer">Galaxy Lube</a>. All rights reserved.</span> 
 							</div>
 						</div>
 					</div>

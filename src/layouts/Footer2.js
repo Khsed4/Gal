@@ -96,7 +96,7 @@ function Footer2(){
                         <div className="ft-inner">
                             <div className="row">
                                 <div className="col-lg-12"> 
-                                    <span className="copyright-text">Copyright © 2022 <a href="https://dexignzone.com/" target="_blank">DexignZone</a>. All rights reserved.</span> 
+                                    <span className="copyright-text">Copyright © 2025 <a href="https://galaxylube.com/" target="_blank">Galaxy Lube</a>. All rights reserved.</span> 
                                 </div>
                             </div>
                         </div>

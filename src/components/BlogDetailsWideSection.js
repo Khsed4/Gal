@@ -47,7 +47,7 @@ export default function BlogDetailsWideSection(){
                     <p>Vestibulum porttitor purus commodo sagittis molestie. Fusce facilisis ipsum ut tincidunt suscipit. Vivamus tristique lectus quis dignissim convallis. Cras eget ipsum bibendum, feugiat libero in, scelerisque erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</p>
                     <blockquote className="block-quote style-1">
                         <p>“You can make anything look good. Only a quarter of young adults are financially literate. You don’t want to overwhelm them with terrible advice.”</p>
-                        <cite> Indiro </cite>
+                        <cite> Galaxy Lube </cite>
                     </blockquote>
                     <p className="m-b40">Aliquam in laoreet dui. Aliquam blandit nisl lacus, sed suscipit massa pulvinar vitae. Proin non dui eros. Mauris lobortis arcu a quam tincidunt, at consectetur urna dapibus. Curabitur sagittis nisl vel dolor porta, eu fringilla est accumsan. Donec eleifend dignissim risus a tempor. Sed suscipit ultrices viverra.</p>
                     <h4 className="m-b15">Aliquam pretium neque vel condimentum sodales.</h4>

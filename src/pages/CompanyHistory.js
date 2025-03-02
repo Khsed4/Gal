@@ -43,7 +43,7 @@ export default function CompanyHistory(){
                                 <div className="m-b30 align-self-center">
                                     <div className="about-content">
                                         <div className="section-head style-1">
-                                            <h3 className="title m-b20">Indiro Was Founded</h3>
+                                            <h3 className="title m-b20">Galaxy Lube Was Founded</h3>
                                             <p>Lorem ipsum dolor sit am adipi we help you ensure everyone is in the right jobs sicing elit, sed do consulting firms Et leggings across the nation tempor sed do consulting firms Et leggings across </p>
                                         </div>
                                         <p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima.</p>

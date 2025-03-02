@@ -13,7 +13,8 @@ import team3 from './../assets/images/team/pic3.jpg';
 import team4 from './../assets/images/team/pic4.jpg';
 import team5 from './../assets/images/team/pic5.jpg';
 import team6 from './../assets/images/team/pic6.jpg';
-
+import React, { useEffect, useState } from "react";
+import { getData } from "../services/apiService"; // Import API service
 
 const teamdataBlog = [
     {image: team1, title:'Liam Nemit'},
@@ -25,6 +26,21 @@ const teamdataBlog = [
 ];
 
 function Team(){
+    const [team, SetTeam] = useState([]);
+      useEffect(() => {
+    const fetchProducts = async () => {
+      try {
+        const data = await getData("/team");
+        SetTeam(data);
+      
+        console.log(data,'data')
+      } catch (error) {
+        console.error("Failed to fetch Team Memebers:", error);
+      }
+    };
+
+    fetchProducts();
+  }, []);
     return(
         <>
             <Header />
@@ -34,12 +50,12 @@ function Team(){
                 <section className="content-inner">
                     <div className="container">
                         <div className="row">
-                            {teamdataBlog.map((item,i)=>(
+                            {team.map((item,i)=>(
 
                                 <div className="col-lg-4 col-md-6" key={i}>
                                     <div className="dz-team style-1 text-center m-b30">
                                         <div className="dz-media">
-                                            <img src={item.image} alt=" " />
+                                            <img src={`http://127.0.0.1:8000${item.image}`}  alt=" " />
                                             <ul className="team-social">
                                                 <li><a href="https://twitter.com/" className="twitter"><i className="fab fa-twitter"></i></a></li>
                                                 <li><a href="https://www.facebook.com/" className="facebook"><i className="fab fa-facebook-f"></i></a></li>
@@ -47,8 +63,8 @@ function Team(){
                                             </ul>
                                         </div>
                                         <div className="dz-content">
-                                            <h4 className="dz-name">{item.title}</h4>
-                                            <h6 className="dz-position text-primary">Designer</h6>
+                                            <h4 className="dz-name">{item.name}</h4>
+                                            <h6 className="dz-position text-primary">{item.occupation}</h6>
                                         </div>
                                     </div>
                                 </div>         
