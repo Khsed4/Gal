@@ -55,7 +55,7 @@ function Team(){
                                 <div className="col-lg-4 col-md-6" key={i}>
                                     <div className="dz-team style-1 text-center m-b30">
                                         <div className="dz-media">
-                                            <img src={`http://127.0.0.1:8000${item.image}`}  alt=" " />
+                                            <img src={`http://142.93.4.113/${item.image}`}  alt=" " />
                                             <ul className="team-social">
                                                 <li><a href="https://twitter.com/" className="twitter"><i className="fab fa-twitter"></i></a></li>
                                                 <li><a href="https://www.facebook.com/" className="facebook"><i className="fab fa-facebook-f"></i></a></li>
