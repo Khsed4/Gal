@@ -30,7 +30,7 @@ function Team(){
       useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const data = await getData("/team");
+        const data = await getData("team/");
         SetTeam(data);
       
         console.log(data,'data')

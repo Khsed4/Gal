@@ -1,7 +1,7 @@
 import axios from "axios";
 
 // Base URL of Django backend
-const BASE_URL = "http://142.93.4.113/galaxy/api"; // Update this if different
+const BASE_URL = "https://api.galaxylube.co/"; // Update this if different
 
 // Create an Axios instance
 const apiClient = axios.create({
