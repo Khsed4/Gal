@@ -37,7 +37,7 @@ export default function ShopGrid3() {
                   <div className="item-box m-b30">
                     <div className="item-img">
                       <img
-                        src={`${item.image1}`}
+                        src={`https://api.galaxylube.co/${item.image1}`}
                         alt=""
                         style={{
                           width: "330px",
@@ -53,7 +53,9 @@ export default function ShopGrid3() {
                     </div>
                     <div className="item-info text-center">
                       <h4 className="item-title">
-                        <Link to={"./product-details"}>{item.name}</Link>
+                        <Link to={`/product-details/${item.id}`}>
+                          {item.name}
+                        </Link>
                       </h4>
 
                       {item.category}

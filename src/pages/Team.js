@@ -40,7 +40,10 @@ function Team() {
                 <div className="col-lg-4 col-md-6" key={i}>
                   <div className="dz-team style-1 text-center m-b30">
                     <div className="dz-media">
-                      <img src={item.image} alt=" " />
+                      <img
+                        src={`https://api.galaxylube.co/${item.image}`}
+                        alt=" "
+                      />
                       <ul className="team-social">
                         <li>
                           <a href="https://twitter.com/" className="twitter">
