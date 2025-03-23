@@ -16,7 +16,7 @@ export default function ShopGrid3() {
         const data = await getData("products/all/");
         SetProducts(data);
 
-        console.log(data, "data");
+        console.log(data, "shopGrid");
       } catch (error) {
         console.error("Failed to fetch Team Memebers:", error);
       }
