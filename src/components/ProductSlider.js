@@ -40,9 +40,7 @@ const options = {
 
 function ProductSlider({ data }) {
   const [loading, setLoading] = useState(true);
-  console.log(data, " is data slider");
 
-  const { image1, image2 } = data;
   const { openLightbox, closeLightbox } = useLightbox();
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
   const navigationPrevRef = React.useRef(null);
@@ -52,21 +50,26 @@ function ProductSlider({ data }) {
   const navigationNextRef2 = React.useRef(null);
 
   useEffect(() => {
-    if (data) {
+    let isMounted = true;
+
+    if (data && isMounted) {
       setLoading(false);
     }
-  }, []);
 
-  if (loading) {
-    return "Loading...";
-  }
+    return () => {
+      isMounted = false;
+    };
+  }, [data]); // Ensure it updates when `data` changes
+
+  const { image1 = "", image2 = "" } = data || {};
+
+  if (!image1 || !image2) return "No images available";
 
   return (
     <>
       <div className="col-3 position-relative">
         <Swiper
           className="swiper-container thumb-slider sync2"
-          //onSwiper={setThumbsSwiper}
           slidesPerView={"auto"}
           slidesPerGroupAuto={true}
           watchSlidesVisibility={true}
@@ -104,23 +107,24 @@ function ProductSlider({ data }) {
             },
           }}
         >
-          {[image1, image2]?.map((item, index) => (
-            <SwiperSlide key={index}>
-              <div className="dz-media">
-                <img
-                  style={{
-                    width: "120px",
-                    height: "141px",
-                    objectFit: "contain",
-                    display: "block",
-                    margin: "auto",
-                  }}
-                  src={`https://api.galaxylube.co/${item}`}
-                  alt=""
-                />
-              </div>
-            </SwiperSlide>
-          ))}
+          {!loading &&
+            [image1, image2]?.map((item, index) => (
+              <SwiperSlide key={index}>
+                <div className="dz-media">
+                  <img
+                    style={{
+                      width: "120px",
+                      height: "141px",
+                      objectFit: "contain",
+                      display: "block",
+                      margin: "auto",
+                    }}
+                    src={`https://api.galaxylube.co/${item}`}
+                    alt=""
+                  />
+                </div>
+              </SwiperSlide>
+            ))}
           <div className="thumb-slider-navigation">
             <div
               className="swiper-button-next-thumb"
